@@ -1,7 +1,11 @@
-# HP Pavillion Gaming Laptop 15-cx0xxx (aka. 光影精灵四代) Hackintosh OpenCore EFI for macOS Catalina & Big Sur
-[中文](./README_zh.md)  
-Tested on 15-cx0074tx  
-For Catalina, please replace OC/Kexts/AirportItlwm.kext with [this one](https://github.com/OpenIntelWireless/itlwm/releases/download/v1.3.0/AirportItlwm_v1.3.0_stable_Catalina.kext.zip)
+# HP Pavillion Gaming Laptop 15-cx0124tx
+
+## Test in Big Sur 11.6
+ 
+<p align="center">
+<img src="./art/img1.png" height="500"/>
+</p>
+
 ## Working
 - Power management
 - Intel graphic card
@@ -12,10 +16,9 @@ For Catalina, please replace OC/Kexts/AirportItlwm.kext with [this one](https://
 - Wi-Fi
 - Bluetooth
 - Web camera
+
 ## Not Working
 - Nvidia graphic card
 - Card reader
-## Untested
 - HDMI port
-## Notes
-- Please refer to [this post](https://zhuanlan.zhihu.com/p/121655468)(in Chinese) to disable CFG Lock before proceeding
+- Hibernate Sleep
