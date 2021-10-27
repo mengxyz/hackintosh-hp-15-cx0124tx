@@ -1,6 +1,12 @@
 # HP Pavillion Gaming Laptop 15-cx0124tx
 
-## Test in Big Sur 11.6
+## Monterey 12.0.1
+ 
+<p align="center">
+<img src="./art/img2.png" height="500"/>
+</p>
+
+## Big Sur 11.6
  
 <p align="center">
 <img src="./art/img1.png" height="500"/>
@@ -14,7 +20,7 @@
 - Ethernet
 - USB ports
 - Wi-Fi
-- Bluetooth
+- Bluetooth ** *Monterey not working wait new Bluetooth inject*
 - Web camera
 
 ## Not Working
