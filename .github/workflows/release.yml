@@ -1,0 +1,26 @@
+name: 🚀 Create Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  create_release:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Create Zip
+        run: |
+          zip -r BigSur.zip "Big Sur/"
+          zip -r Monterey.zip "Monterey/"
+          
+      - name: Upload EFI
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          prerelease: ${{ contains(github.ref, 'dev') }}
+          files: |
+            BigSur.zip
+            Monterey.zip
