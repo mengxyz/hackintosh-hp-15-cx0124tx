@@ -15,11 +15,15 @@ jobs:
         run: |
           zip -r BigSur.zip "Big Sur/"
           zip -r Monterey.zip "Monterey/"
+     
+      - name: Generate Changelog
+        run: git log  --format="%C(auto) %h %s" `git tag --sort=-committerdate | head -1`...`git tag --sort=-committerdate | head -2 | tail -1` |cut -d " " -f 2- > changelog.txt     
           
       - name: Upload EFI
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
+          body_path: changelog.txt
           prerelease: ${{ contains(github.ref, 'dev') }}
           files: |
             BigSur.zip
