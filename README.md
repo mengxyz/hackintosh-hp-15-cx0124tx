@@ -14,17 +14,17 @@
 
 ## Working
 - Power management
+- Hibernate sleep ** __*Only Monterey*__
 - Intel graphic card
 - Touchpad
 - Audio
 - Ethernet
 - USB ports
 - Wi-Fi
-- Bluetooth ** *Monterey not working wait new Bluetooth inject*
+- Bluetooth ** __*Monterey some time can't open*__
 - Web camera
 
 ## Not Working
 - Nvidia graphic card
 - Card reader
 - HDMI port
-- Hibernate Sleep
