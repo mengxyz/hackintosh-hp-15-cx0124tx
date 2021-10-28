@@ -13,7 +13,6 @@ jobs:
       
       - name: Create Zip
         run: |
-          zip -r BigSur.zip "Big Sur/"
           zip -r Monterey.zip "Monterey/"
      
       - name: Generate Changelog
@@ -26,5 +25,4 @@ jobs:
           body_path: changelog.txt
           prerelease: ${{ contains(github.ref, 'dev') }}
           files: |
-            BigSur.zip
             Monterey.zip

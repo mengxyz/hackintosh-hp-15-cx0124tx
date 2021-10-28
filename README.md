@@ -6,7 +6,7 @@
 <img src="./art/img2.png" height="500"/>
 </p>
 
-## Big Sur 11.6
+## Big Sur 11.6 __*Deprecated*__
  
 <p align="center">
 <img src="./art/img1.png" height="500"/>
