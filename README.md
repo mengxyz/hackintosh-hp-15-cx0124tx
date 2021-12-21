@@ -24,6 +24,15 @@
 - Bluetooth ** __*Monterey some time can't open*__
 - Web camera
 
+## Important
+
+- when update os in system update
+- you must be disable SIP
+- Go to NVRAM > ADD > 7C436110-AB2A-4BBB-A880-FE41995C9F82
+- set csr-active-config from 00000000 to 03000000 before update
+- after update you set back to 00000000 for security
+- for more info read this guide [https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/post-issues.html#disabling-sip](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/post-issues.html#disabling-sip)
+
 ## Not Working
 - Nvidia graphic card
 - Card reader
